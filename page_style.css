@@ -22,6 +22,10 @@ a{
   display:block;
   text-decoration:none;
 }
+img{
+  width:100%;
+  height:auto;
+}
 
 /* navbar */
 header{
@@ -41,5 +45,49 @@ header nav ul li a{
 header nav ul li a:hover{
   background-color:var(--color-white);
   color:var(--color-black);
+}
+
+/* welcome section */
+#welcome-section{
+  width:100%;
+  height:calc(100vh - 50px);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+#welcome-section .welcome-img{
+  width:100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: 2;
+}
+#welcome-section .welcome-img>img{
+  width: auto;
+  object-fit: contain;
+}
+#welcome-section .layer{
+  width:100%;
+  height: 100%;
+  background:rgba(0,0,0,0.5);
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 3;
+}
+#welcome-section .welcome-text{
+  background:rgba(0,0,0,0.5);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  font-size: clamp(1.35rem , 3.5vw , 2.5rem);
+  line-height: 1.5;
+  position: absolute;
+  text-align: center;
+  color: var(--color-white);
+  z-index: 4;
+}
+#welcome-section .welcome-text h3{
+  font-weight: var(--font-reg);
+  color: var(--color-red);
 }
 
