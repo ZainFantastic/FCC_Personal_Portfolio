@@ -23,6 +23,7 @@ a{
   text-decoration:none;
 }
 img{
+  display: block;
   width:100%;
   height:auto;
 }
@@ -37,13 +38,25 @@ header nav ul{
   justify-content: flex-end !important;
 }
 header nav ul li a{
+  display: flex;
+  align-items: center;
   padding:1rem;
   color:var(--color-white);
   font-weight: var(--font-semi);
   transition: all 0.25s ease-in-out;
 }
+header nav ul li a span{
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+}
 header nav ul li a:hover{
   background-color:var(--color-white);
+  color:var(--color-black);
+}
+header nav ul li a:hover span{
+  margin-left: 0.35rem;
+  transform: translateX(2.5px);
+  visibility:visible;
   color:var(--color-black);
 }
 
@@ -91,3 +104,67 @@ header nav ul li a:hover{
   color: var(--color-red);
 }
 
+
+/* projects section */
+#projects{
+  margin:var(--margin-section) auto;
+}
+#projects .projects-text{
+  text-align:center;
+  line-height:1.8;
+}
+#projects .portfolio{
+  margin:var(--margin-section) auto;
+}
+#projects .portfolio .card{
+  border:3px solid #555;
+  border-radius: 0.35rem;
+  background: #555;
+  color:var(--color-white);
+  text-align: center;
+  transition: all 0.25s ease-in;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.35);
+}
+#projects .portfolio .card:hover{
+  transform: translateY(-5px);
+}
+
+#projects .portfolio .card h3{
+  margin: 0.5rem 0;
+  font-weight: var(--font-bold);
+}
+#projects .portfolio .card a{
+  display: block;
+  font-weight: var(--font-semi);
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+  color:var(--color-white);
+}
+#projects .portfolio .card a span{
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 50%;
+  transition: all 0.25s ease-in;
+}
+#projects .portfolio .card a:hover span{
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+}
+
+#projects .more a{
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius:9999px;
+  font-weight: var(--font-bold);
+  background-color:var(--color-red);
+  color:var(--color-white);
+  transition: all 0.25s ease-in;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+
+#projects .more a:hover {
+  background-color: #742132;
+  box-shadow: 0 0 15px rgba(144, 55, 73, 0.65);
+}

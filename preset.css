@@ -27,6 +27,13 @@
   align-items:center;
 }
 
+/* grid */
+.grid{
+  display:grid;
+  gap:1.5rem;
+  grid-template-columns: repeat(auto-fit , minmax(300px , 0.5fr));
+}
+
 /* container */
  .container{ 
   padding-right: var(--padding);
