@@ -16,9 +16,8 @@
   --font-bold:700;
 
   /* padding & margin */
-  --padding-section:2.25rem;
-  --margin-section:3rem;
   --padding:1.5rem;
+  --margin-section:3rem;
 }
 
 /* flex */

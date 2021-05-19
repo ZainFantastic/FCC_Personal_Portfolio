@@ -174,7 +174,7 @@ header nav ul li a:hover span{
 
 /* contact me */
 #contact-me{
-  padding:var(--padding-section);
+  padding:var(--padding);
   background-color:var(--color-navy);
 }
 #contact-me .contact-text{
@@ -212,3 +212,41 @@ header nav ul li a:hover span{
 }
 
 
+/* footer{ */
+  footer{
+    padding:0.5rem;
+    background-color:var(--color-footer);
+  }
+  footer .footer-box{
+    justify-content: space-between !important;
+    color:var(--color-white);
+  }
+  footer .footer-box .red{
+    color:var(--color-red);
+  }
+  footer .footer-box .social a{
+    padding:0.5rem 1rem;
+    color:var(--color-white);
+  }
+  
+  footer .footer-box .social .insta:hover{
+    color: #833AB4;
+    background:linear-gradient(75deg , #405DE6 , #5B51D8 ,#833AB4 ,#C13584 ,#E1306C ,#FD1D1D ,#F56040 ,#F77737 ,#FCAF45 ,#FFDC80);
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    -webkit-text-fill-color: transparent;
+  }
+  footer .footer-box .social .codepen:hover{
+    color:#000000;
+    background:linear-gradient(126deg, #ffffff 0%, #cccccc 36%);
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    -webkit-text-fill-color: transparent;
+  }
+  footer .footer-box .social .github:hover{
+    color:#6e5494 ;
+    background:linear-gradient(180deg, #6e5494 0%, #6c35bd 36%, #2b0f53 100%);
+    -webkit-background-clip:text;
+    -moz-background-clip:text;
+    -webkit-text-fill-color: transparent;
+  }
