@@ -168,3 +168,44 @@ header nav ul li a:hover span{
   background-color: #742132;
   box-shadow: 0 0 15px rgba(144, 55, 73, 0.65);
 }
+
+
+/* contact me */
+#contact-me{
+  padding:var(--padding-section);
+  background-color:var(--color-navy);
+}
+#contact-me .contact-text{
+  color:var(--color-white);
+  font-size: 2.5rem;;
+  line-height:1.8;
+  text-align: center;
+}
+#contact-me .contact-text p{
+  margin-top:2.5rem ;
+  font-size:1.5rem;
+}
+#contact-me .my-links a{
+  position: relative;
+  margin:1rem;
+  font-size:1.15rem;
+  color:var(--color-white);
+}
+#contact-me .my-links a::before{
+  content: '';
+  width: 0%;
+  height:1px;
+  background-color: var(--color-white);
+  position: absolute;
+  bottom: 0;
+  left:0;
+  transition:all 0.25s ease-in-out;
+}
+#contact-me .my-links a:hover::before{
+  width:100%;
+}
+
+#contact-me .my-links a .icon{
+  margin-left:0.25rem;
+}
+
