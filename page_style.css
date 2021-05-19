@@ -30,9 +30,19 @@ img{
 
 /* navbar */
 header{
+  position: sticky;
+  top:0;
+  left:0;
+  z-index: 1000;
   min-height:50px;
   background-color:var(--color-red);
   box-shadow: 0 5px 10px rgba(0,0,0,0.35);
+}
+header nav {
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1001;
 }
 header nav ul{
   justify-content: flex-end !important;
@@ -191,6 +201,7 @@ header nav ul li a:hover span{
   position: relative;
   margin:1rem;
   font-size:1.15rem;
+  text-align: center;
   color:var(--color-white);
 }
 #contact-me .my-links a::before{
@@ -211,6 +222,13 @@ header nav ul li a:hover span{
   margin-left:0.25rem;
 }
 
+/* small screen devices max width 768px */
+@media all and (max-width:768px){
+  #contact-me .my-links{
+    flex-direction:column;
+  }
+}
+
 
 /* footer{ */
   footer{
@@ -220,15 +238,28 @@ header nav ul li a:hover span{
   footer .footer-box{
     justify-content: space-between !important;
     color:var(--color-white);
+    text-align:center;
   }
   footer .footer-box .red{
     color:var(--color-red);
   }
+
+
+/* small screen devices max width 768px */
+@media all and (max-width:768px){
+  footer .footer-box p{
+    margin:1.5rem 0;
+  }
+  footer .footer-box {
+  flex-flow:column wrap;
+  }
+}
+
   footer .footer-box .social a{
     padding:0.5rem 1rem;
     color:var(--color-white);
   }
-  
+
   footer .footer-box .social .insta:hover{
     color: #833AB4;
     background:linear-gradient(75deg , #405DE6 , #5B51D8 ,#833AB4 ,#C13584 ,#E1306C ,#FD1D1D ,#F56040 ,#F77737 ,#FCAF45 ,#FFDC80);
